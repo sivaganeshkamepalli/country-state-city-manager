@@ -1,0 +1,190 @@
+.country-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.country-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.country-list-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.country-card {
+  background: #fff;
+  border: 1px solid #dde1e7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.country-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+  color: #666;
+  padding: 4px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+ 
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.toggle-btn:hover {
+  background: #f0f2f5;
+}
+
+.country-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  flex: 1;
+ 
+  min-width: 0;
+  word-break: break-word;
+}
+
+.country-meta {
+  font-size: 0.74rem;
+  color: #888;
+  
+  white-space: nowrap;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+
+.btn-add,
+.btn-edit,
+.btn-delete {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 500;
+ 
+  padding: 7px 12px;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover {
+  opacity: 0.85;
+}
+
+.btn-add {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+.btn-edit {
+  background-color: #f0a500;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #e53935;
+  color: #fff;
+}
+
+
+.country-body {
+  border-top: 1px solid #eee;
+  padding: 12px;
+  background: #fafbfc;
+}
+
+.empty-msg {
+  color: #888;
+  font-size: 0.85rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+@media (min-width: 480px) {
+  .country-row {
+    flex-wrap: nowrap;
+    padding: 13px 14px;
+  }
+
+  .country-name {
+    font-size: 1rem;
+  }
+
+  .country-meta {
+    font-size: 0.76rem;
+    margin-right: 6px;
+  }
+
+  .btn-add,
+  .btn-edit,
+  .btn-delete {
+    font-size: 0.8rem;
+    padding: 6px 13px;
+  }
+
+  .country-body {
+    padding: 13px 14px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .country-list {
+    gap: 12px;
+  }
+
+  .country-list-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .country-row {
+    padding: 14px 16px;
+    gap: 10px;
+  }
+
+  .country-name {
+    font-size: 1rem;
+  }
+
+  .country-meta {
+    font-size: 0.78rem;
+    margin-right: 8px;
+  }
+
+  .btn-add,
+  .btn-edit,
+  .btn-delete {
+    font-size: 0.82rem;
+    padding: 6px 14px;
+  }
+
+  .country-body {
+    padding: 14px 16px;
+  }
+}

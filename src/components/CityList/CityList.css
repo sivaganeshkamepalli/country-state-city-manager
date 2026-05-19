@@ -1,0 +1,176 @@
+.city-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.city-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.city-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.city-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.city-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #777;
+}
+
+.btn-add-city {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  background-color: #34a853;
+  color: #fff;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.btn-add-city:hover {
+  opacity: 0.85;
+}
+
+.city-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.city-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #e8f0fe;
+  border: 1px solid #c5d5f7;
+  border-radius: 20px;
+  padding: 5px 10px 5px 12px;
+  font-size: 0.78rem;
+  color: #1a56c4;
+}
+
+.city-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 0.75rem;
+  padding: 2px 4px;
+  line-height: 1;
+  border-radius: 50%;
+  transition: color 0.15s;
+}
+
+.city-delete-btn:hover {
+  color: #e53935;
+}
+
+.city-empty {
+  font-size: 0.78rem;
+  color: #bbb;
+}
+
+@media (min-width: 480px) {
+  .city-tag {
+    font-size: 0.8rem;
+    padding: 4px 10px 4px 12px;
+  }
+
+  .city-delete-btn {
+    font-size: 0.72rem;
+    padding: 0 2px;
+  }
+
+  .btn-add-city {
+    font-size: 0.76rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .city-label {
+    font-size: 0.74rem;
+  }
+
+  .city-tag {
+    font-size: 0.8rem;
+  }
+}
+
+.city-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #777;
+}
+
+.btn-add-city {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  background-color: #34a853;
+  color: #fff;
+  transition: opacity 0.15s;
+}
+
+.btn-add-city:hover {
+  opacity: 0.85;
+}
+
+.city-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.city-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #e8f0fe;
+  border: 1px solid #c5d5f7;
+  border-radius: 20px;
+  padding: 4px 10px 4px 12px;
+  font-size: 0.8rem;
+  color: #1a56c4;
+}
+
+.city-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 0.7rem;
+  padding: 0 2px;
+  line-height: 1;
+  border-radius: 50%;
+  transition: color 0.15s;
+}
+
+.city-delete-btn:hover {
+  color: #e53935;
+}
+
+.city-empty {
+  font-size: 0.8rem;
+  color: #bbb;
+}
